@@ -4,10 +4,11 @@
 
 > Student burnout is a growing mental health crisis in Indian universities. BurnoutGuard provides early detection through machine learning, explainability through SHAP, and actionable recovery plans.
 
-**Project:** RV University — BTech CSE Final Year (4 Credits)  
-**Student:** Nandini | **Year:** 2024–25  
+**Student:** Sahanaa M S | **Year:** 2025–26
+
 **Status:** ✅ Complete & Production-Ready
 
+https://student-burnoutguard.onrender.com/
 ---
 
 ## 📋 Table of Contents
@@ -111,7 +112,6 @@ Student burnout affects mental health, academic performance, and dropout rates. 
 
 ### Deployment
 - **Local:** Flask development server
-- **Production-Ready:** Gunicorn, Docker, Cloud (AWS/Heroku)
 
 ---
 
@@ -191,13 +191,16 @@ pip install -r requirements.txt
 ```
 
 **Dependencies:**
-- flask>=2.3.0
-- scikit-learn>=1.3.0
-- pandas>=2.0.0
-- numpy>=1.24.0
-- matplotlib>=3.7.0
-- seaborn>=0.12.0
-- openpyxl>=3.1.0 (for Excel file support)
+flask>=2.3.0
+scikit-learn==1.8.0
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+openpyxl>=3.1.0
+gunicorn>=21.2.0
+python-dotenv>=1.0.0
+joblib>=1.3.0
 
 ### Step 4: Set Up Environment Variables (Optional)
 Create a `.env` file in the project root:
@@ -205,6 +208,7 @@ Create a `.env` file in the project root:
 FLASK_ENV=development
 BURNOUT_MAIL_SENDER=your_email@gmail.com
 BURNOUT_MAIL_PASSWORD=your_16_char_app_password
+BREVO_API_KEY= xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 ### Step 5: Train ML Model (First Time)
@@ -723,23 +727,11 @@ We welcome contributions! To contribute:
 
 ---
 
-## 📝 License
-
-This project is licensed under the **MIT License** — see LICENSE file for details.
-
----
-
 ## 👤 Author & Contact
 
-**Student:** Nandini  
-**Institution:** RV University, Bangalore  
-**Project Year:** 2024-25  
-**Project Code:** BTech CSE Final Year (4 Credits)
-
-**Questions or Feedback?**
-- 📧 Email: [Your Email]
-- 🔗 GitHub: [Your GitHub Profile]
-- 💼 LinkedIn: [Your LinkedIn]
+**Student:** Sahanaa M S
+**Institution:** RV University, Bengaluru 
+**Project Year:** 2025-26  
 
 ---
 
@@ -761,6 +753,3 @@ This project is licensed under the **MIT License** — see LICENSE file for deta
 
 ---
 
-**Last Updated:** April 2025  
-**Status:** ✅ Complete & Production-Ready
-4. Pedregosa et al. (2011). Scikit-learn: Machine learning in Python. *JMLR, 12*, 2825–2830.
